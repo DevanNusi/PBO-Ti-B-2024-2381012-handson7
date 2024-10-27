@@ -1,8 +1,7 @@
 package abstraksi;
 
-    abstract class Kendaraan {
-        String.warna;
-    }
+abstract class Kendaraan {
+    String warna;
 
     public Kendaraan(String warna) {
         this.warna = warna;
@@ -10,4 +9,7 @@ package abstraksi;
 
     abstract void bergerak();
 
-
+    void info() {
+        System.out.println("Warna kendaraan : " + warna);
+    }
+}

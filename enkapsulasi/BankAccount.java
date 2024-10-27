@@ -1,7 +1,7 @@
 package enkapsulasi;
 
 public class BankAccount {
-    double saldo;
+    private double saldo;
 
     public BankAccount(double saldo) {
         this.saldo = saldo;
@@ -11,15 +11,15 @@ public class BankAccount {
         return saldo;
     }
 
-    public void deposit(double jumlah) {
-        if (jumlah > 0) {
+    public void deposit (double jumlah) {
+        if (jumlah > 0 ) {
             saldo += jumlah;
         }
     }
 
-    public void withdraw(double jumlah) {
+    public void  withdraw(double jumlah) {
         if (jumlah > 0 && jumlah <= saldo) {
-            saldo -= jumlah;
+            saldo = jumlah;
         }
     }
 }
